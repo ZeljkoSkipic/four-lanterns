@@ -219,6 +219,53 @@
                     "parent_repeater": "field_6425cb052c302"
                 }
             ]
+        },
+        {
+            "key": "field_643572d35d093",
+            "label": "Recommended Title",
+            "name": "recommended_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Other Recommended Wines",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_643572e65d094",
+            "label": "Wines",
+            "name": "wines",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "product"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "return_format": "object",
+            "min": "",
+            "max": "",
+            "elements": ""
         }
     ],
     "location": [
@@ -239,5 +286,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1680615897
+    "modified": 1681224438
 }

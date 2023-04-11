@@ -4,7 +4,15 @@ add_action( 'wp_enqueue_scripts', 'elegant_enqueue_css' );
 
 function elegant_enqueue_css() {
 	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+	if(is_singular('product'))
+	{
+		wp_enqueue_script( 'flickity', get_stylesheet_directory_uri() . '/js/vendor/flickity.js',array('jquery'), '2.3.0' ,true);
+		wp_enqueue_script( 'slider', get_stylesheet_directory_uri() . '/js/slider.js',array('jquery'),'2.3.0',true);
+	}
+
+
 }
+
 
 
 add_filter('acf/settings/save_json', 'my_acf_json_save_point');
