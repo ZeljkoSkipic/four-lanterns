@@ -1,0 +1,243 @@
+{
+    "key": "group_6425cb04b31a2",
+    "title": "Product",
+    "fields": [
+        {
+            "key": "field_6425cc092c305",
+            "label": "Price",
+            "name": "price",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6425cc672c307",
+            "label": "States & Links",
+            "name": "states_links",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add State",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6425d39b3c625",
+                    "label": "State",
+                    "name": "state",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Alaska": "Alaska",
+                        "Arizona": "Arizona",
+                        "California": "California",
+                        "Colorado": "Colorado",
+                        "Connecticut": "Connecticut",
+                        "Florida": "Florida",
+                        "Georgia": "Georgia",
+                        "Hawaii": "Hawaii",
+                        "Idaho": "Idaho",
+                        "Illinois": "Illinois",
+                        "Indiana": "Indiana",
+                        "Iowa": "Iowa",
+                        "Kansas": "Kansas",
+                        "Kentucky": "Kentucky",
+                        "Louisiana": "Louisiana",
+                        "Maine": "Maine",
+                        "Maryland": "Maryland",
+                        "Massachusetts": "Massachusetts",
+                        "Michigan": "Michigan",
+                        "Minnesota": "Minnesota",
+                        "Missouri": "Missouri",
+                        "Montana": "Montana",
+                        "Nebraska": "Nebraska",
+                        "Nevada": "Nevada",
+                        "New Hampshire": "New Hampshire",
+                        "New Jersey": "New Jersey",
+                        "New Mexico": "New Mexico",
+                        "New York": "New York",
+                        "North Carolina": "North Carolina",
+                        "North Dakota": "North Dakota",
+                        "Ohio": "Ohio",
+                        "Oklahoma": "Oklahoma",
+                        "Oregon": "Oregon",
+                        "Pennsylvania": "Pennsylvania",
+                        "South Carolina": "South Carolina",
+                        "Tennessee": "Tennessee",
+                        "Texas": "Texas",
+                        "Vermont": "Vermont",
+                        "Virginia": "Virginia",
+                        "Washington": "Washington",
+                        "West Virginia": "West Virginia",
+                        "Wisconsin": "Wisconsin",
+                        "Wyoming": "Wyoming"
+                    },
+                    "default_value": false,
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_6425cc672c307"
+                },
+                {
+                    "key": "field_6425d3ae3c626",
+                    "label": "Product Link",
+                    "name": "product_link",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_6425cc672c307"
+                }
+            ]
+        },
+        {
+            "key": "field_6425cc3c2c306",
+            "label": "Description",
+            "name": "description",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "full",
+            "delay": 0
+        },
+        {
+            "key": "field_6425cb052c302",
+            "label": "Additional Information",
+            "name": "additional_information",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 2,
+            "collapsed": "",
+            "button_label": "Add Section",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6425cbdf2c303",
+                    "label": "Section Title",
+                    "name": "section_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6425cb052c302"
+                },
+                {
+                    "key": "field_6425cbf22c304",
+                    "label": "Section Text",
+                    "name": "section_text",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "text",
+                    "media_upload": 0,
+                    "toolbar": "full",
+                    "delay": 0,
+                    "parent_repeater": "field_6425cb052c302"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1680615897
+}

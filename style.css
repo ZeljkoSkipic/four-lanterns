@@ -1,0 +1,39 @@
+/*
+Theme Name: Divi Child
+Author:     Zeljko Skipic
+Author URI: https://zeljkoskipic.dev/
+Template:   Divi
+Version:    0.0.1
+Description:   A Child Theme of Divi created using the Divi Child Configurator on zeljkoskipic.dev site.
+WordPress Version: 6.2
+*/
+/*  Your CSS goes below this line  */
+.single-product #main-content { background-color: #e9e9e8; }
+
+.single-product .container { width: 100%; max-width: 2048px; }
+
+.bv_single-product { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.bv_single-product h1 { font-size: 60px; }
+
+.bv_single-product .bv_product_left { width: 50%; padding-right: 5rem; padding-left: 9.375rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; font-size: 30px; font-weight: 400; line-height: 1.2; }
+
+.bv_single-product .bv_product_left .bv_price { font-size: 60px; }
+
+.bv_single-product .bv_product_left .bv_order_btn { background: #d6d2d0; border: 2px solid #252423; color: #222020; font-size: 24px; padding: 20px 35px; }
+
+.bv_single-product .bv_product_left .bv_pl_top { margin-top: 4.5rem; margin-bottom: 6.25rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.bv_single-product .bv_product_left .bv_pl_additional_info { margin-top: auto; }
+
+.bv_single-product .bv_product_left .bv_pl_additional_info .bv_pl_ai_box { padding-top: 5rem; }
+
+.bv_single-product .bv_product_left .bv_pl_additional_info .bv_pl_title { font-size: 36px; }
+
+.bv_single-product .bv_product_right { width: 50%; }
+
+.bv_single-product .bv_product_right img { width: 100%; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlcyI6WyJzdHlsZS5zY3NzIiwidmFyaWFibGVzLnNjc3MiLCJmaWxlcy9wcm9kdWN0LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7O0VBUUU7QUFFRixxQ0FBcUM7QUVWckMsQUFDSSxlQURXLENBQ1gsYUFBYSxDQUFDLEVBQ1YsZ0JBQWdCLEVBQUUsT0FBTyxHQUM1Qjs7QUFITCxBQUlJLGVBSlcsQ0FJWCxVQUFVLENBQUMsRUFDUCxLQUFLLEVBQUUsSUFBSSxFQUNYLFNBQVMsRUFBRSxNQUFNLEdBQ3BCOztBQUVMLEFBQUEsa0JBQWtCLENBQUMsRUFDZixPQUFPLEVBQUUsSUFBSSxHQTZDaEI7O0FBOUNELEFBRUksa0JBRmMsQ0FFZCxFQUFFLENBQUMsRUFDQyxTQUFTLEVBQUUsSUFBSSxHQUNsQjs7QUFKTCxBQUtJLGtCQUxjLENBS2QsZ0JBQWdCLENBQUMsRUFDYixLQUFLLEVBQUUsR0FBRyxFQUNWLGFBQWEsRUFBRSxJQUFJLEVBQ25CLFlBQVksRUFBRSxRQUFRLEVBQ3RCLE9BQU8sRUFBRSxJQUFJLEVBQ2IsY0FBYyxFQUFFLE1BQU0sRUFDdEIsU0FBUyxFQUFFLElBQUksRUFDZixXQUFXLEVBQUUsR0FBRyxFQUNoQixXQUFXLEVBQUUsR0FBRyxHQTBCbkI7O0FBdkNMLEFBY1Esa0JBZFUsQ0FLZCxnQkFBZ0IsQ0FTWixTQUFTLENBQUMsRUFDTixTQUFTLEVBQUUsSUFBSSxHQUNsQjs7QUFoQlQsQUFpQlEsa0JBakJVLENBS2QsZ0JBQWdCLENBWVosYUFBYSxDQUFDLEVBQ1YsVUFBVSxFQUFFLE9BQU8sRUFDbkIsTUFBTSxFQUFFLGlCQUFpQixFQUN6QixLQUFLLEVBQUUsT0FBTyxFQUNkLFNBQVMsRUFBRSxJQUFJLEVBQ2YsT0FBTyxFQUFFLFNBQVMsR0FDckI7O0FBdkJULEFBd0JRLGtCQXhCVSxDQUtkLGdCQUFnQixDQW1CWixVQUFVLENBQUMsRUFDUCxVQUFVLEVBQUUsTUFBTSxFQUNsQixhQUFhLEVBQUUsT0FBTyxFQUN0QixPQUFPLEVBQUUsSUFBSSxFQUNiLGVBQWUsRUFBRSxhQUFhLEdBQ2pDOztBQTdCVCxBQThCUSxrQkE5QlUsQ0FLZCxnQkFBZ0IsQ0F5Qlosc0JBQXNCLENBQUMsRUFDbkIsVUFBVSxFQUFFLElBQUksR0FPbkI7O0FBdENULEFBZ0NZLGtCQWhDTSxDQUtkLGdCQUFnQixDQXlCWixzQkFBc0IsQ0FFbEIsYUFBYSxDQUFDLEVBQ1YsV0FBVyxFQUFFLElBQUksR0FDcEI7O0FBbENiLEFBbUNZLGtCQW5DTSxDQUtkLGdCQUFnQixDQXlCWixzQkFBc0IsQ0FLbEIsWUFBWSxDQUFDLEVBQ1QsU0FBUyxFQUFFLElBQUksR0FDbEI7O0FBckNiLEFBd0NJLGtCQXhDYyxDQXdDZCxpQkFBaUIsQ0FBQyxFQUNkLEtBQUssRUFBRSxHQUFHLEdBSWI7O0FBN0NMLEFBMENRLGtCQTFDVSxDQXdDZCxpQkFBaUIsQ0FFYixHQUFHLENBQUMsRUFDQSxLQUFLLEVBQUUsSUFBSSxHQUNkIn0= */
+
+/*# sourceMappingURL=style.css.map */
