@@ -15,21 +15,27 @@ $description = get_field('description');
 					<h1 class="title-1"><?php the_title(); ?></h1>
 					<div class="bv_pl_top">
 						<span class="bv_price">$<?php echo $price; ?></span>
-						<a class="bv_order_btn" href="#">Order Wine</a>
-						<a class="bv_order_ss" href="#">Select State</a>
 						<?php
 							// Check rows existexists.
 							if( have_rows('states_links') ): ?>
-								<select name="" id="">
 								<?php // Loop through rows.
 								while( have_rows('states_links') ) : the_row();
 
 									// Load sub field value.
+									$product_link = get_sub_field('product_link');
+									$state = get_sub_field('state'); ?>
+
+
+								<?php endwhile; ?>
+								<a class="bv_order_btn" disabled target="_blank">Order Wine</a>
+
+								<select name="" class="bv_order_ss" id="wine_dd">
+									<option id="blank">Select State</option>
+									<?php while( have_rows('states_links') ) : the_row();
 									$state = get_sub_field('state');
-									$product_link = get_sub_field('product_link'); ?>
-
-									<option value="<?php echo $state; ?>"><?php echo $state; ?></option>
-
+									$product_link = get_sub_field('product_link');
+									?>
+									<option value="<?php echo $product_link; ?>"><?php echo $state; ?></option>
 								<?php endwhile; ?>
 								</select>
 							<?php endif; ?>
@@ -64,7 +70,7 @@ $description = get_field('description');
 			</div>
 			<div class="bv_recommended">
 				<h2 class="title-1"><?php the_field('recommended_title'); ?></h2>
-				<div class="main-carousel">
+				<div class="bv_recommended_inner">
 					<?php
 						$wines = get_field('wines');
 						if( $wines ): ?>
@@ -72,15 +78,17 @@ $description = get_field('description');
 
 								// Setup this post for WP functions (variable must be named $post).
 								setup_postdata($post); ?>
-								<div class="bv_wine carousel-cell">
+								<div class="bv_wine">
 									<a href="<?php the_permalink(); ?>">
 										<?php the_post_thumbnail(); ?>
 									</a>
-									<a href="<?php the_permalink(); ?>">
-										<?php the_title(); ?>
-									</a>
-									<p>What this text should represent?</p>
-									<span><?php the_field('price'); ?></span>
+									<div class="bw_recommended_text">
+										<h2 class="bw_recommended_title"><a href="<?php the_permalink(); ?>">
+											<?php the_title(); ?>
+										</a></h2>
+										<p>What this text should represent?</p>
+										<span class="bw_recommended_price"><?php the_field('price'); ?></span>
+									</div>
 								</div>
 							<?php endforeach; ?>
 							<?php
@@ -91,16 +99,52 @@ $description = get_field('description');
 			</div>
 		</div>
 	</div>
+	<div class="bw_product_cta">
+		<div class="bw_product_cta_left">
+		<?php
+		$cta_image = get_field('cta_image', 'option');
+		$size = 'full'; // (thumbnail, medium, large, full or custom size)
+		if( $cta_image ) {
+			echo wp_get_attachment_image( $cta_image, $size );
+		}
+		?>
+		</div>
+		<div class="bw_product_cta_right">
+		<?php
+		$cta_logo = get_field('cta_logo', 'option');
+		$size = 'full'; // (thumbnail, medium, large, full or custom size)
+		if( $cta_logo ) {
+			echo wp_get_attachment_image( $cta_logo, $size, "", array("class" => "cta_logo") );
+		}
+		?>
+		<h2 class="title-1"><?php the_field('cta_title', 'option'); ?></h2>
+		<div class="bw_product_cta_content"><?php the_field('cta_content', 'option'); ?></div>
+		<?php
+		$cta_link = get_field('cta_button', 'option');
+		if( $cta_link ):
+			$cta_link_url = $cta_link['url'];
+			$cta_link_title = $cta_link['title'];
+			$cta_link_target = $cta_link['target'] ? $cta_link['target'] : '_self';
+			?>
+			<a class="bw_cta_btn" href="<?php echo esc_url( $cta_link_url ); ?>" target="<?php echo esc_attr( $cta_cta_link_target ); ?>"><?php echo esc_html( $cta_link_title ); ?></a>
+		<?php endif; ?>
+
+		</div>
+	</div>
 </div>
 
 <script>
 jQuery(document).ready(function ($) {
-$('.main-carousel').flickity({
-  // options
-  cellAlign: 'left',
-  contain: true,
-  wrapAround: true,
-});
+	$( "select" )
+	.change(function () {
+		var str = "";
+		$( "select#wine_dd option:not(#blank):selected" ).each(function() {
+		str += $( this ).val() + " ";
+		});
+		$( ".bv_order_btn" ).attr( "href", str );
+	})
+	.change();
+
 });
 </script>
 
