@@ -99,6 +99,11 @@ $description = get_field('description');
 			</div>
 		</div>
 	</div>
+	<div class="bw_reviews">
+		<div class="container">
+			<script src="https://login.reviewgenerationservices.com/js/v1/embed.js?token=703d1dfa-2be9-4afa-b376-8647d9fae952" type="text/javascript"></script>
+		</div>
+	</div>
 	<div class="bw_product_cta">
 		<div class="bw_product_cta_left">
 		<?php

@@ -161,6 +161,11 @@
 		}
 	}
 }
+/* Reviews */
+
+.bw_reviews {
+	background-color: #fff;
+}
 
 /* CTA */
 
@@ -185,7 +190,7 @@
 		background-color: #222020;
 		display: flex;
 		@include limbo-min {
-			width: 50%;
+			width: calc(50% + 1px)
 		}
 		@include limbo-max {
 			padding: 5rem 10rem;

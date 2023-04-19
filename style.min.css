@@ -48,6 +48,7 @@ https://flickity.metafizzy.co
 .bv_wine .bw_recommended_text p{font-size:2.4rem}
 .bv_wine .bw_recommended_text .bw_recommended_price{font-size:3.2rem;font-family:'Kaisei Decol',Georgia,"Times New Roman",serif}
 .bv_wine .bw_recommended_text .bw_recommended_price::before{content:"";margin:20px auto;display:block;height:3px;width:100px;background-color:#4b0197}
+.bw_reviews{background-color:#fff}
 .bw_product_cta{display:-webkit-box;display:-ms-flexbox;display:flex}
 .bw_product_cta .bw_product_cta_left{line-height:0}
 .bw_product_cta .bw_product_cta_left img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
@@ -66,7 +67,7 @@ https://flickity.metafizzy.co
 }@media(min-width:797.6px){.bv_wine{width:23%}
 .bv_wine:not(:last-child){margin-right:calc(8% / 3)}
 .bw_product_cta .bw_product_cta_left{width:50%}
-.bw_product_cta .bw_product_cta_right{width:50%}
+.bw_product_cta .bw_product_cta_right{width:calc(50% + 1px)}
 }@media(min-width:1199.6px) and (max-width:1360.5px){html{font-size:8px}
 }@media(min-width:1360.6px) and (max-width:1659.5px){html{font-size:9px}
 }@media(max-width:1199.5px){.bw_product_cta .bw_product_cta_right{padding:5rem 10rem}
