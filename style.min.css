@@ -24,21 +24,20 @@ https://flickity.metafizzy.co
 .flickity-rtl .flickity-page-dots{direction:rtl}
 .flickity-page-dots .dot{display:inline-block;width:10px;height:10px;margin:0 8px;background:#333;border-radius:50%;opacity:.25;cursor:pointer}
 .flickity-page-dots .dot.is-selected{opacity:1}
-.title-1{font-size:5rem}
+.title-1{font-size:4rem}
 .single-product #main-content{background-color:#e9e9e8}
 .single-product .container{width:100%}
 .single-product .container:before{display:none}
 .bv_product_main{display:-webkit-box;display:-ms-flexbox;display:flex;padding-bottom:15rem}
-.bv_product_main .bv_product_left{padding:3rem 8rem 10rem 5%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;font-size:3rem;font-weight:400;line-height:1.2}
-.bv_product_main .bv_product_left .bv_price{font-size:5rem;margin-right:1rem}
+.bv_product_main .bv_product_left{padding:3rem 8rem 10rem 5%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;font-size:20px;font-weight:400;line-height:1.2}
+.bv_product_main .bv_product_left .bv_price{font-size:4rem;margin-right:1rem}
 .bv_product_main .bv_product_left .bv_order_btn{background:#d6d2d0;border:2px solid #252423;color:#222020;font-size:2.4rem;padding:2rem 3.5rem;margin-right:1rem}
 .bv_product_main .bv_product_left .bv_order_btn[href=""]{pointer-events:none;opacity:.3}
-.bv_product_main .bv_product_left .bv_order_ss{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:2.4rem;color:#222020;background-color:transparent;border:0;cursor:pointer}
+.bv_product_main .bv_product_left .bv_order_ss{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:2.4rem;color:#222020;background-color:transparent;border:0;cursor:pointer;-webkit-appearance:none;-webkit-border-radius:0;background-color:#ecebeb;background:url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6cmdiYSgyNTUsMjU1LDI1NSwwKTt9LmNscy0ye2ZpbGw6IzVCNTg1NTt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 95% 50%;background-color:#ecebeb;background-position:center right;padding-right:20px}
 .bv_product_main .bv_product_left .bv_order_ss option{background-color:transparent}
 .bv_product_main .bv_product_left .bv_pl_top{margin-top:4.5rem;margin-bottom:6.25rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap}
-.bv_product_main .bv_product_left .bv_pl_additional_info{margin-top:auto}
-.bv_product_main .bv_product_left .bv_pl_additional_info .bv_pl_ai_box{padding-top:5rem}
-.bv_product_main .bv_product_left .bv_pl_additional_info .bv_pl_title{font-size:3.6rem}
+.bv_product_main .bv_product_left .bv_pl_additional_info .bv_pl_ai_box{padding-top:2rem}
+.bv_product_main .bv_product_left .bv_pl_additional_info .bv_pl_title{font-size:3.1rem}
 .bv_product_main .bv_product_right img{-o-object-fit:contain;object-fit:contain;height:100%}
 .bv_recommended{padding-bottom:9rem}
 .bv_recommended .title-1{text-align:center;margin-bottom:7rem}
@@ -49,6 +48,8 @@ https://flickity.metafizzy.co
 .bv_wine .bw_recommended_text .bw_recommended_price{font-size:3.2rem;font-family:'Kaisei Decol',Georgia,"Times New Roman",serif}
 .bv_wine .bw_recommended_text .bw_recommended_price::before{content:"";margin:20px auto;display:block;height:3px;width:100px;background-color:#4b0197}
 .bw_reviews{background-color:#fff}
+.bw_reviews .container{text-align:center}
+.bw_reviews .container h2{margin-bottom:10px}
 .bw_product_cta{display:-webkit-box;display:-ms-flexbox;display:flex}
 .bw_product_cta .bw_product_cta_left{line-height:0}
 .bw_product_cta .bw_product_cta_left img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
@@ -74,10 +75,14 @@ https://flickity.metafizzy.co
 .bw_product_cta .bw_product_cta_right .title-1{margin-top:5rem;margin-bottom:3rem}
 }@media(max-width:797.5px){.bw_product_cta{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 }@media(max-width:599.5px){html{font-size:5px}
+.title-1{font-size:30px}
 .bv_product_main{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
-.bv_product_main .bv_product_left .bv_price{width:100%;margin-bottom:3rem}
+.bv_product_main .bv_product_left{font-size:18px}
+.bv_product_main .bv_product_left .bv_price{width:100%;margin-bottom:3rem;font-size:30px}
 .bv_product_main .bv_product_left .bv_order_btn{font-size:18px}
 .bv_product_main .bv_product_left .bv_order_ss{font-size:18px}
+.bv_product_main .bv_product_left .bv_pl_top{margin-top:3rem}
+.bv_product_main .bv_product_left .bv_pl_additional_info .bv_pl_title{font-size:25px}
 .bv_recommended .bv_recommended_inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .bv_wine:not(:last-child){margin-bottom:5rem}
 .bv_wine .bw_recommended_text p{font-size:20px;margin-top:5px}

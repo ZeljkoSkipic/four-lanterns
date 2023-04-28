@@ -1,3 +1,6 @@
 .title-1 {
-	font-size: 5rem;
+	font-size: 4rem;
+	@include mob-only {
+		font-size: 30px;
+	}
 }

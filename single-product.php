@@ -86,8 +86,8 @@ $description = get_field('description');
 										<h2 class="bw_recommended_title"><a href="<?php the_permalink(); ?>">
 											<?php the_title(); ?>
 										</a></h2>
-										<p>What this text should represent?</p>
-										<span class="bw_recommended_price"><?php the_field('price'); ?></span>
+										<?php the_excerpt(); ?>
+										<span class="bw_recommended_price">$<?php the_field('price'); ?></span>
 									</div>
 								</div>
 							<?php endforeach; ?>
@@ -101,6 +101,13 @@ $description = get_field('description');
 	</div>
 	<div class="bw_reviews">
 		<div class="container">
+			<h2 class="title-1"><?php the_field('reviews_title', 'option'); ?></h2>
+			<?php
+			$review_stars = get_field('review_stars', 'option');
+			$size = 'full';
+			if( $review_stars ) {
+				echo wp_get_attachment_image( $review_stars, $size, "", array( "class" => "review_stars" ) );
+			} ?>
 			<script src="https://login.reviewgenerationservices.com/js/v1/embed.js?token=703d1dfa-2be9-4afa-b376-8647d9fae952" type="text/javascript"></script>
 		</div>
 	</div>

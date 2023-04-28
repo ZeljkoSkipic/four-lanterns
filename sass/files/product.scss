@@ -22,15 +22,19 @@
 		padding: 3rem 8rem 10rem 5%;
         display: flex;
         flex-direction: column;
-        font-size: 3rem;
+        font-size: 20px;
         font-weight: 400;
         line-height: 1.2;
+		@include mob-only {
+			font-size: 18px;
+		}
         .bv_price {
-            font-size: 5rem;
+            font-size: 4rem;
 			margin-right: 1rem;
 			@include mob-only {
 				width: 100%;
 				margin-bottom: 3rem;
+				font-size: 30px;
 			}
         }
         .bv_order_btn {
@@ -56,6 +60,13 @@
 			background-color: transparent;
 			border: none;
 			cursor: pointer;
+			-webkit-appearance: none;
+			-webkit-border-radius: 0;
+			background-color: #ecebeb;
+			background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6cmdiYSgyNTUsMjU1LDI1NSwwKTt9LmNscy0ye2ZpbGw6IzVCNTg1NTt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 95% 50%;
+			background-color: #ecebeb;
+			background-position: center right;
+			padding-right: 20px;
 			@include mob-only {
 				font-size: 18px;
 			}
@@ -70,15 +81,20 @@
             justify-content: space-between;
 			align-items: center;
 			flex-wrap: wrap;
-
+			@include mob-only {
+				margin-top: 3rem;
+			}
         }
+
         .bv_pl_additional_info {
-            margin-top: auto;
-            .bv_pl_ai_box {
-                padding-top: 5rem;
+          	.bv_pl_ai_box {
+                padding-top: 2rem;
             }
             .bv_pl_title {
-                font-size: 3.6rem;
+                font-size: 3.1rem;
+				@include mob-only {
+					font-size: 25px;
+				}
             }
         }
     }
@@ -165,6 +181,12 @@
 
 .bw_reviews {
 	background-color: #fff;
+	.container {
+		text-align: center;
+		h2 {
+			margin-bottom: 10px;
+		}
+	}
 }
 
 /* CTA */
