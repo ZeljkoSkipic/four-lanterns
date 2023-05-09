@@ -334,7 +334,7 @@
 					$link_title = $header_button['title'];
 					$link_target = $header_button['target'] ? $header_button['target'] : '_self';
 					?>
-				<a class="sm_btn" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+				<a class="fl_btn" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
 				<?php endif; ?>
 			</div> <!-- .container -->
 			<?php if ( $show_search_icon ) : ?>

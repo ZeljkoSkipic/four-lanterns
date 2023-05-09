@@ -5,7 +5,7 @@
 		display: flex;
 		align-items: center;
 	}
-	.sm_btn {
+	.fl_btn {
 		z-index: 9;
 		color: #000;
 		font-weight: 600;
@@ -38,7 +38,7 @@
 			padding-left: 320px!important;
 			float: none;
 		}
-		.sm_btn {
+		.fl_btn {
 			margin-left: auto;
 		}
 	}
@@ -69,8 +69,9 @@
 			padding-left: unset!important;
 			order: 1;
 		}
-		.sm_btn {
+		.fl_btn {
 			order: 2;
+			font-size: 14px;
 		}
 	}
 	.mobile_menu_bar:before {
