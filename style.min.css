@@ -25,6 +25,26 @@ https://flickity.metafizzy.co
 .flickity-page-dots .dot{display:inline-block;width:10px;height:10px;margin:0 8px;background:#333;border-radius:50%;opacity:.25;cursor:pointer}
 .flickity-page-dots .dot.is-selected{opacity:1}
 .title-1{font-size:4rem}
+#main-header .container{width:90%;max-width:1600px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+#main-header .sm_btn{z-index:9;color:#000;font-weight:600;background-color:#d6d2d0;padding:.3em 1em;border-radius:3px;border:2px solid #000;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;font-size:16px;display:-webkit-box;display:-ms-flexbox;display:flex;font-family:'Nunito Sans',Helvetica,Arial,Lucida,sans-serif;text-transform:uppercase;font-weight:700;-webkit-transition:.4s all;transition:.4s all}
+#main-header .sm_btn:hover{color:#fff;background-color:#000;border-color:#d6d2d0}
+#et_mobile_nav_menu .mobile_nav.opened .mobile_menu_bar::before,.et_pb_module.et_pb_menu .et_mobile_nav_menu .mobile_nav.opened .mobile_menu_bar::before{content:'\4d'}
+ul.et_mobile_menu{border-top-color:#000}
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle,ul.et_mobile_menu li.page_item_has_children .mobile-toggle{width:44px;height:100%;padding:0 !important;max-height:44px;border:0;position:absolute;right:0;top:0;z-index:999;background-color:transparent}
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle,.et-db #et-boc .et-l ul.et_mobile_menu li.page_item_has_children .mobile-toggle{width:44px;height:100%;padding:0 !important;max-height:44px;border:0;position:absolute;right:0;top:0;z-index:999;background-color:transparent}
+ul.et_mobile_menu>li.menu-item-has-children,ul.et_mobile_menu>li.page_item_has_children,ul.et_mobile_menu>li.menu-item-has-children .sub-menu li.menu-item-has-children{position:relative}
+.et-db #et-boc .et-l ul.et_mobile_menu>li.menu-item-has-children,.et-db #et-boc .et-l ul.et_mobile_menu>li.page_item_has_children,.et-db #et-boc .et-l ul.et_mobile_menu>li.menu-item-has-children .sub-menu li.menu-item-has-children{position:relative}
+.et_mobile_menu .menu-item-has-children>a,.et-db #et-boc .et-l .et_mobile_menu .menu-item-has-children>a{background-color:transparent}
+ul.et_mobile_menu .menu-item-has-children .sub-menu,#main-header ul.et_mobile_menu .menu-item-has-children .sub-menu{display:none !important;visibility:hidden !important}
+.et-db #et-boc .et-l ul.et_mobile_menu .menu-item-has-children .sub-menu,.et-db #main-header ul.et_mobile_menu .menu-item-has-children .sub-menu{display:none !important;visibility:hidden !important}
+ul.et_mobile_menu .menu-item-has-children .sub-menu.visible,#main-header ul.et_mobile_menu .menu-item-has-children .sub-menu.visible{display:block !important;visibility:visible !important}
+.et-db #et-boc .et-l ul.et_mobile_menu .menu-item-has-children .sub-menu.visible,.et-db #main-header ul.et_mobile_menu .menu-item-has-children .sub-menu.visible{display:block !important;visibility:visible !important}
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle,.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle{text-align:center;opacity:1}
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle::after,.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle::after{top:10px;position:relative;font-family:"ETModules";content:'\33';color:#000;background:#fff;border-radius:50%;padding:3px;font-size:20px}
+ul.et_mobile_menu li.menu-item-has-children.dt-open>.mobile-toggle::after,.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children.dt-open>.mobile-toggle::after{content:'\32'}
+.et_pb_menu_0.et_pb_menu .et_mobile_menu:after{position:absolute;right:5%;margin-left:-20px;top:-14px;width:0;height:0;content:'';border-left:20px solid transparent;border-right:20px solid transparent;border-bottom:20px solid #fff}
+.et_pb_menu_0.et_pb_menu .et_mobile_menu{background-color:#fff !important;border-radius:10px}
+.et_pb_menu_0.et_pb_menu .et_mobile_menu ul{background-color:#fff !important;border-radius:10px}
 .single-product #main-content{background-color:#e9e9e8}
 .single-product .container{width:100%}
 .single-product .container:before{display:none}
@@ -50,22 +70,26 @@ https://flickity.metafizzy.co
 .bw_reviews{background-color:#fff}
 .bw_reviews .container{text-align:center}
 .bw_reviews .container h2{margin-bottom:10px}
-.bw_product_cta{display:-webkit-box;display:-ms-flexbox;display:flex}
-.bw_product_cta .bw_product_cta_left{line-height:0}
+.bw_product_cta{display:-webkit-box;display:-ms-flexbox;display:flex;position:relative}
+.bw_product_cta .background_image{position:absolute;width:100%;height:100%;top:0;bottom:0;left:0;right:0;-o-object-fit:cover;object-fit:cover;z-index:1}
+.bw_product_cta .bw_product_cta_left{line-height:0;z-index:2}
 .bw_product_cta .bw_product_cta_left img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
-.bw_product_cta .bw_product_cta_right{padding:5.5rem 15rem;background-color:#222020;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.bw_product_cta .bw_product_cta_right{z-index:2;padding:5.5rem 15rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .bw_product_cta .bw_product_cta_right *{color:#fff}
 .bw_product_cta .bw_product_cta_right .cta_logo{margin-inline:auto}
 .bw_product_cta .bw_product_cta_right .title-1{margin-top:11rem;margin-bottom:4.5rem}
-.bw_product_cta .bw_product_cta_right .bw_product_cta_content{font-size:2.4rem;line-height:1.5}
-.bw_product_cta .bw_product_cta_right .bw_cta_btn{background-color:#fff;color:#222020;display:-webkit-box;display:-ms-flexbox;display:flex;padding:2.5rem;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;font-size:2.4rem;text-transform:uppercase;font-weight:700;margin-top:4.5rem}
+.bw_product_cta .bw_product_cta_right .bw_product_cta_content{font-size:16px;line-height:1.5}
+.bw_product_cta .bw_product_cta_right .bw_cta_btn{background-color:#d6d2d0;color:#000;display:-webkit-box;display:-ms-flexbox;display:flex;padding:.3em 1em;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;font-size:16px;text-transform:uppercase;font-weight:700;margin-top:4.5rem;border-radius:3px;border:2px solid;-webkit-transition:.2s all;transition:.2s all}
+.bw_product_cta .bw_product_cta_right .bw_cta_btn:hover{color:#fff;background-color:#000;border-color:#d6d2d0}
 @media(min-width:599.6px) and (max-width:797.5px){html{font-size:6px}
 .bv_wine{width:31%}
 .bv_wine:not(:last-child){margin-right:calc(7% / 3)}
 }@media(min-width:599.6px){.bv_product_main .bv_product_left{width:50%}
 .bv_product_main .bv_product_right{width:50%}
 }@media(min-width:797.6px) and (max-width:1199.5px){html{font-size:7px}
-}@media(min-width:797.6px){.bv_wine{width:23%}
+}@media(min-width:797.6px){#main-header #et-top-navigation{padding-left:320px !important;float:none}
+#main-header .sm_btn{margin-left:auto}
+.bv_wine{width:23%}
 .bv_wine:not(:last-child){margin-right:calc(8% / 3)}
 .bw_product_cta .bw_product_cta_left{width:50%}
 .bw_product_cta .bw_product_cta_right{width:calc(50% + 1px)}
@@ -73,7 +97,15 @@ https://flickity.metafizzy.co
 }@media(min-width:1360.6px) and (max-width:1659.5px){html{font-size:9px}
 }@media(max-width:1199.5px){.bw_product_cta .bw_product_cta_right{padding:5rem 10rem}
 .bw_product_cta .bw_product_cta_right .title-1{margin-top:5rem;margin-bottom:3rem}
-}@media(max-width:797.5px){.bw_product_cta{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+}@media(max-width:797.5px){#main-header .container{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+#main-header .clearfix:after{display:none}
+#main-header .logo_container{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3;width:auto;position:relative;width:80px;text-align:right;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex}
+#main-header .logo_container img{max-width:100%}
+#main-header #et-top-navigation{padding-left:unset !important;-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}
+#main-header .sm_btn{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}
+.mobile_menu_bar:before{font-size:35px;color:#000}
+#mobile_menu{background:#e9e9e8}
+.bw_product_cta{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 }@media(max-width:599.5px){html{font-size:5px}
 .title-1{font-size:30px}
 .bv_product_main{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
@@ -88,5 +120,5 @@ https://flickity.metafizzy.co
 .bv_wine .bw_recommended_text p{font-size:20px;margin-top:5px}
 .bv_wine .bw_recommended_text .bw_recommended_price{font-size:20px}
 .bw_product_cta .bw_product_cta_right .bw_product_cta_content{font-size:20px}
-.bw_product_cta .bw_product_cta_right .bw_cta_btn{width:100%;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;font-size:18px}
+.bw_product_cta .bw_product_cta_right .bw_cta_btn{width:100%;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 }

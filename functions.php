@@ -102,6 +102,14 @@ register_post_type( 'product', array(
 
 if( function_exists('acf_add_options_page') ) {
 
+	acf_add_options_page(array(
+        'page_title'    => 'Website General Settings',
+        'menu_title'    => 'Site Settings',
+        'menu_slug'     => 'theme-general-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+
     acf_add_options_sub_page(array(
         'page_title'    => 'Bottom Product Call To Action',
         'menu_title'    => 'Call To Action',

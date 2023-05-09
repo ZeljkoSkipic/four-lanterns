@@ -112,6 +112,12 @@ $description = get_field('description');
 		</div>
 	</div>
 	<div class="bw_product_cta">
+		<?php
+		$background_image = get_field('background_image', 'option');
+		$size = 'full';
+		if( $background_image ) {
+			echo wp_get_attachment_image( $background_image, $size, "", array( "class" => "background_image" ) );
+		} ?>
 		<div class="bw_product_cta_left">
 		<?php
 		$cta_image = get_field('cta_image', 'option');

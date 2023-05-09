@@ -193,11 +193,24 @@
 
 .bw_product_cta {
 	display: flex;
+	position: relative;
+	.background_image {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		object-fit: cover;
+		z-index: 1;
+	}
 	@include tab-max {
 		flex-direction: column;
 	}
 	.bw_product_cta_left {
 		line-height: 0;
+		z-index: 2;
 		@include limbo-min {
 			width: 50%;
 		}
@@ -208,8 +221,8 @@
 		}
 	}
 	.bw_product_cta_right {
+		z-index: 2;
 		padding: 5.5rem 15rem;
-		background-color: #222020;
 		display: flex;
 		@include limbo-min {
 			width: calc(50% + 1px)
@@ -233,27 +246,34 @@
 			}
 		}
 		.bw_product_cta_content {
-			font-size: 2.4rem;
+			font-size: 16px;
 			line-height: 1.5;
 			@include mob-only {
 				font-size: 20px;
 			}
 		}
 		.bw_cta_btn {
-			background-color: #fff;
-			color: #222020;
+			background-color: #d6d2d0;
+			color: #000;
 			display: flex;
-			padding: 2.5rem;
+			padding: .3em 1em;
 			width: fit-content;
-			font-size: 2.4rem;
+			font-size: 16px;
 			text-transform: uppercase;
 			font-weight: 700;
 			margin-top: 4.5rem;
+			border-radius: 3px;
+			border: 2px solid;
+			transition: .2s all;
+			&:hover {
+				color: #ffffff;
+				background-color: #000000;
+				border-color: #d6d2d0;
+			}
 			@include mob-only {
 				width: 100%;
 				align-items: center;
 				justify-content: center;
-				font-size: 18px;
 			}
 		}
 	}

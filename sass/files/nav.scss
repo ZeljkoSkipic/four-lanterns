@@ -1,0 +1,228 @@
+#main-header {
+	.container {
+		width: 90%;
+		max-width: 1600px;
+		display: flex;
+		align-items: center;
+	}
+	.sm_btn {
+		z-index: 9;
+		color: #000;
+		font-weight: 600;
+		background-color: #d6d2d0;
+		padding: .3em 1em;
+		border-radius: 3px;
+		border: 2px solid #000;
+		width: fit-content;
+		font-size: 16px;
+		display: flex;
+		font-family: 'Nunito Sans',Helvetica,Arial,Lucida,sans-serif;
+		text-transform: uppercase;
+		font-weight: 700;
+		transition: .4s all;
+		&:hover {
+			color: #ffffff;
+			background-color: #000000;
+			border-color: #d6d2d0;
+		}
+	}
+}
+
+
+
+
+
+@include limbo-min {
+	#main-header {
+		#et-top-navigation {
+			padding-left: 320px!important;
+			float: none;
+		}
+		.sm_btn {
+			margin-left: auto;
+		}
+	}
+}
+
+@include tab-max {
+	#main-header {
+		.container {
+			justify-content: space-between;
+		}
+		.clearfix:after {
+			display: none;
+		}
+		.logo_container {
+			order: 3;
+			width: auto;
+			position: relative;
+			width: 80px;
+			text-align: right;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			img {
+				max-width: 100%;
+			}
+		}
+		#et-top-navigation {
+			padding-left: unset!important;
+			order: 1;
+		}
+		.sm_btn {
+			order: 2;
+		}
+	}
+	.mobile_menu_bar:before {
+		font-size: 35px;
+		color: #000;
+	}
+	#mobile_menu {
+		background: #e9e9e8;
+	}
+}
+
+
+
+/*change hamburger icon to x when mobile menu is open*/
+
+#et_mobile_nav_menu .mobile_nav.opened .mobile_menu_bar::before, .et_pb_module.et_pb_menu .et_mobile_nav_menu .mobile_nav.opened .mobile_menu_bar::before {
+	content: '\4d';
+  }
+
+  /*adjust the new toggle element which is added via jQuery*/
+  ul.et_mobile_menu {
+	border-top-color: #000;
+  }
+  ul.et_mobile_menu li {
+	&.menu-item-has-children .mobile-toggle, &.page_item_has_children .mobile-toggle {
+	  width: 44px;
+	  height: 100%;
+	  padding: 0px !important;
+	  max-height: 44px;
+	  border: none;
+	  position: absolute;
+	  right: 0px;
+	  top: 0px;
+	  z-index: 999;
+	  background-color: transparent;
+	}
+  }
+
+  .et-db #et-boc .et-l ul.et_mobile_menu li {
+	&.menu-item-has-children .mobile-toggle, &.page_item_has_children .mobile-toggle {
+	  width: 44px;
+	  height: 100%;
+	  padding: 0px !important;
+	  max-height: 44px;
+	  border: none;
+	  position: absolute;
+	  right: 0px;
+	  top: 0px;
+	  z-index: 999;
+	  background-color: transparent;
+	}
+  }
+
+  /*some code to keep everyting positioned properly*/
+
+  ul.et_mobile_menu > li {
+	&.menu-item-has-children, &.page_item_has_children, &.menu-item-has-children .sub-menu li.menu-item-has-children {
+	  position: relative;
+	}
+  }
+
+  .et-db #et-boc .et-l ul.et_mobile_menu > li {
+	&.menu-item-has-children, &.page_item_has_children, &.menu-item-has-children .sub-menu li.menu-item-has-children {
+	  position: relative;
+	}
+  }
+
+  /*remove default background color from menu items that have children*/
+
+  .et_mobile_menu .menu-item-has-children > a, .et-db #et-boc .et-l .et_mobile_menu .menu-item-has-children > a {
+	background-color: transparent;
+  }
+
+  /*hide the submenu by default*/
+
+  ul.et_mobile_menu .menu-item-has-children .sub-menu, #main-header ul.et_mobile_menu .menu-item-has-children .sub-menu {
+	display: none !important;
+	visibility: hidden !important;
+  }
+
+  .et-db {
+	#et-boc .et-l ul.et_mobile_menu .menu-item-has-children .sub-menu, #main-header ul.et_mobile_menu .menu-item-has-children .sub-menu {
+	  display: none !important;
+	  visibility: hidden !important;
+	}
+  }
+
+  /*show the submenu when toggled open*/
+
+  ul.et_mobile_menu .menu-item-has-children .sub-menu.visible, #main-header ul.et_mobile_menu .menu-item-has-children .sub-menu.visible {
+	display: block !important;
+	visibility: visible !important;
+  }
+
+  .et-db {
+	#et-boc .et-l ul.et_mobile_menu .menu-item-has-children .sub-menu.visible, #main-header ul.et_mobile_menu .menu-item-has-children .sub-menu.visible {
+	  display: block !important;
+	  visibility: visible !important;
+	}
+  }
+
+  /*adjust the toggle icon position and transparency*/
+
+  ul.et_mobile_menu li.menu-item-has-children .mobile-toggle, .et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle {
+	text-align: center;
+	opacity: 1;
+  }
+
+  /*submenu toggle icon when closed*/
+
+  ul.et_mobile_menu li.menu-item-has-children .mobile-toggle::after, .et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle::after {
+	top: 10px;
+	position: relative;
+	font-family: "ETModules";
+	content: '\33';
+	color: #000;
+	background: #fff;
+	border-radius: 50%;
+	padding: 3px;
+	font-size: 20px;
+  }
+
+  /*submenu toggle icon when open*/
+
+  ul.et_mobile_menu li.menu-item-has-children.dt-open > .mobile-toggle::after, .et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children.dt-open > .mobile-toggle::after {
+	content: '\32';
+  }
+
+  /*add point on top of the menu submenu dropdown*/
+
+  .et_pb_menu_0.et_pb_menu .et_mobile_menu:after {
+	position: absolute;
+	right: 5%;
+	margin-left: -20px;
+	top: -14px;
+	width: 0;
+	height: 0;
+	content: '';
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid #ffffff;
+  }
+
+
+  /*force the background color and add a rounded border*/
+
+  .et_pb_menu_0.et_pb_menu .et_mobile_menu {
+	background-color: #ffffff !important;
+	border-radius: 10px;
+
+	ul {
+	  background-color: #ffffff !important;
+	  border-radius: 10px;
+	}
+  }
