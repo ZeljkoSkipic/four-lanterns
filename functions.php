@@ -117,3 +117,12 @@ if( function_exists('acf_add_options_page') ) {
     ));
 
 }
+
+
+function dotiavatar_function() {
+	ob_start();
+	get_template_part('template-parts/cta');
+	return ob_get_clean();
+}
+
+add_shortcode('dotiavatar', 'dotiavatar_function');

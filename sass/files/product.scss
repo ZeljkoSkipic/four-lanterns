@@ -248,6 +248,7 @@
 		.bw_product_cta_content {
 			font-size: 16px;
 			line-height: 1.5;
+			max-width: 400px;
 			@include mob-only {
 				font-size: 20px;
 			}

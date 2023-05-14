@@ -78,7 +78,7 @@ ul.et_mobile_menu li.menu-item-has-children.dt-open>.mobile-toggle::after,.et-db
 .bw_product_cta .bw_product_cta_right *{color:#fff}
 .bw_product_cta .bw_product_cta_right .cta_logo{margin-inline:auto}
 .bw_product_cta .bw_product_cta_right .title-1{margin-top:11rem;margin-bottom:4.5rem}
-.bw_product_cta .bw_product_cta_right .bw_product_cta_content{font-size:16px;line-height:1.5}
+.bw_product_cta .bw_product_cta_right .bw_product_cta_content{font-size:16px;line-height:1.5;max-width:400px}
 .bw_product_cta .bw_product_cta_right .bw_cta_btn{background-color:#d6d2d0;color:#000;display:-webkit-box;display:-ms-flexbox;display:flex;padding:.3em 1em;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;font-size:16px;text-transform:uppercase;font-weight:700;margin-top:4.5rem;border-radius:3px;border:2px solid;-webkit-transition:.2s all;transition:.2s all}
 .bw_product_cta .bw_product_cta_right .bw_cta_btn:hover{color:#fff;background-color:#000;border-color:#d6d2d0}
 @media(min-width:599.6px) and (max-width:797.5px){html{font-size:6px}
@@ -99,10 +99,10 @@ ul.et_mobile_menu li.menu-item-has-children.dt-open>.mobile-toggle::after,.et-db
 .bw_product_cta .bw_product_cta_right .title-1{margin-top:5rem;margin-bottom:3rem}
 }@media(max-width:797.5px){#main-header .container{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 #main-header .clearfix:after{display:none}
-#main-header .logo_container{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3;width:auto;position:relative;width:80px;text-align:right;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex}
+#main-header .logo_container{width:auto;position:relative;width:80px;text-align:right;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex}
 #main-header .logo_container img{max-width:100%}
 #main-header #et-top-navigation{padding-left:unset !important;-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}
-#main-header .fl_btn{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2;font-size:14px}
+#main-header .fl_btn{font-size:14px}
 .mobile_menu_bar:before{font-size:35px;color:#000}
 #mobile_menu{background:#e9e9e8}
 .bw_product_cta{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
