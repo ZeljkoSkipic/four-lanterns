@@ -116,6 +116,12 @@ if( function_exists('acf_add_options_page') ) {
         'parent_slug'   => 'edit.php?post_type=product',
     ));
 
+	acf_add_options_sub_page(array(
+        'page_title'    => 'Wine Club Bottles',
+        'menu_title'    => 'Wine Club',
+        'parent_slug'   => 'theme-general-settings',
+    ));
+
 }
 
 
@@ -126,3 +132,12 @@ function wine_club_cta_shortcode() {
 }
 
 add_shortcode('wine_club_cta', 'wine_club_cta_shortcode');
+
+
+function wine_club_bottles_shortcode() {
+	ob_start();
+	get_template_part('template-parts/bottles');
+	return ob_get_clean();
+}
+
+add_shortcode('wine_club_bottles', 'wine_club_bottles_shortcode');

@@ -9,13 +9,13 @@
 		}
     }
 }
-.bv_product_main {
+.fl_product_main {
     display: flex;
 	padding-bottom: 15rem;
 	@include mob-only {
 		flex-direction: column;
 	}
-    .bv_product_left {
+    .fl_product_left {
         @include tab-min {
 			width: 50%;
 		}
@@ -28,7 +28,7 @@
 		@include mob-only {
 			font-size: 18px;
 		}
-        .bv_price {
+        .fl_price {
             font-size: 4rem;
 			margin-right: 1rem;
 			@include mob-only {
@@ -37,7 +37,7 @@
 				font-size: 30px;
 			}
         }
-        .bv_order_btn {
+        .fl_order_btn {
             background: #d6d2d0;
             border: 2px solid #252423;
             color: #222020;
@@ -52,7 +52,7 @@
 				font-size: 18px;
 			}
         }
-		.bv_order_ss {
+		.fl_order_ss {
 			justify-content: center;
 			align-items: center;
 			font-size: 2.4rem;
@@ -74,7 +74,7 @@
 				background-color: transparent;
 			}
 		}
-        .bv_pl_top {
+        .fl_pl_top {
             margin-top: 4.5rem;
             margin-bottom: 6.25rem;
             display: flex;
@@ -86,11 +86,11 @@
 			}
         }
 
-        .bv_pl_additional_info {
-          	.bv_pl_ai_box {
+        .fl_pl_additional_info {
+          	.fl_pl_ai_box {
                 padding-top: 2rem;
             }
-            .bv_pl_title {
+            .fl_pl_title {
                 font-size: 3.1rem;
 				@include mob-only {
 					font-size: 25px;
@@ -98,7 +98,7 @@
             }
         }
     }
-    .bv_product_right {
+    .fl_product_right {
         @include tab-min {
 			width: 50%;
 		}
@@ -112,13 +112,13 @@
 
 /* Recommended */
 
-.bv_recommended {
+.fl_recommended {
 	padding-bottom: 9rem;
 	.title-1 {
 		text-align: center;
 		margin-bottom: 7rem;
 	}
-	.bv_recommended_inner {
+	.fl_recommended_inner {
 		display: flex;
         justify-content: center;
 		@include mob-only {
@@ -126,7 +126,7 @@
 		}
 	}
 }
-.bv_wine {
+.fl_wine {
 
     img {
         box-shadow: 6px 6px 18px 0px rgba(0,0,0,0.3);

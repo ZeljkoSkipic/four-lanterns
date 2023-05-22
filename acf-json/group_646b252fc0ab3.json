@@ -1,0 +1,185 @@
+{
+    "key": "group_646b252fc0ab3",
+    "title": "Settings: Wine Club",
+    "fields": [
+        {
+            "key": "field_646b259a58d61",
+            "label": "Blurb",
+            "name": "blurb",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 3,
+            "collapsed": "",
+            "button_label": "Add Blurb",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_646b25ee06cf0",
+                    "label": "Image",
+                    "name": "image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium",
+                    "parent_repeater": "field_646b259a58d61"
+                },
+                {
+                    "key": "field_646b274a0eba1",
+                    "label": "State Links",
+                    "name": "states_links",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add State",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_646b2522ed0e0",
+                            "label": "State",
+                            "name": "state",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Alaska": "Alaska",
+                                "Arizona": "Arizona",
+                                "California": "California",
+                                "Colorado": "Colorado",
+                                "Connecticut": "Connecticut",
+                                "Florida": "Florida",
+                                "Georgia": "Georgia",
+                                "Hawaii": "Hawaii",
+                                "Idaho": "Idaho",
+                                "Illinois": "Illinois",
+                                "Indiana": "Indiana",
+                                "Iowa": "Iowa",
+                                "Kansas": "Kansas",
+                                "Kentucky": "Kentucky",
+                                "Louisiana": "Louisiana",
+                                "Maine": "Maine",
+                                "Maryland": "Maryland",
+                                "Massachusetts": "Massachusetts",
+                                "Michigan": "Michigan",
+                                "Minnesota": "Minnesota",
+                                "Missouri": "Missouri",
+                                "Montana": "Montana",
+                                "Nebraska": "Nebraska",
+                                "Nevada": "Nevada",
+                                "New Hampshire": "New Hampshire",
+                                "New Jersey": "New Jersey",
+                                "New Mexico": "New Mexico",
+                                "New York": "New York",
+                                "North Carolina": "North Carolina",
+                                "North Dakota": "North Dakota",
+                                "Ohio": "Ohio",
+                                "Oklahoma": "Oklahoma",
+                                "Oregon": "Oregon",
+                                "Pennsylvania": "Pennsylvania",
+                                "South Carolina": "South Carolina",
+                                "Tennessee": "Tennessee",
+                                "Texas": "Texas",
+                                "Vermont": "Vermont",
+                                "Virginia": "Virginia",
+                                "Washington": "Washington",
+                                "West Virginia": "West Virginia",
+                                "Wisconsin": "Wisconsin",
+                                "Wyoming": "Wyoming"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "parent_repeater": "field_646b274a0eba1"
+                        },
+                        {
+                            "key": "field_646b2522ed0e1",
+                            "label": "Signup Link",
+                            "name": "signup_link",
+                            "aria-label": "",
+                            "type": "url",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "parent_repeater": "field_646b274a0eba1"
+                        }
+                    ],
+                    "parent_repeater": "field_646b259a58d61"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-wine-club"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1684744721
+}

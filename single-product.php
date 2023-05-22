@@ -9,12 +9,12 @@ $description = get_field('description');
 
 <div id="main-content">
 	<div class="container">
-		<div id="content-area" class="clearfix bv_single-product">
-            <div class="bv_product_main">
-				<div class="bv_product_left">
+		<div id="content-area" class="clearfix fl_single-product">
+            <div class="fl_product_main">
+				<div class="fl_product_left">
 					<h1 class="title-1"><?php the_title(); ?></h1>
-					<div class="bv_pl_top">
-						<span class="bv_price">$<?php echo $price; ?></span>
+					<div class="fl_pl_top">
+						<span class="fl_price">$<?php echo $price; ?></span>
 						<?php
 							// Check rows existexists.
 							if( have_rows('states_links') ): ?>
@@ -27,9 +27,9 @@ $description = get_field('description');
 
 
 								<?php endwhile; ?>
-								<a class="bv_order_btn" disabled target="_blank">Order Wine</a>
+								<a class="fl_order_btn" disabled target="_blank">Order Wine</a>
 
-								<select name="" class="bv_order_ss" id="wine_dd">
+								<select name="" class="fl_order_ss" id="wine_dd">
 									<option id="blank">Select State</option>
 									<?php while( have_rows('states_links') ) : the_row();
 									$state = get_sub_field('state');
@@ -40,13 +40,13 @@ $description = get_field('description');
 								</select>
 							<?php endif; ?>
 					</div>
-					<div class="bv_pl_description">
+					<div class="fl_pl_description">
 						<?php echo $description; ?>
 					</div>
 					<?php
 					// Check rows existexists.
 					if( have_rows('additional_information') ): ?>
-						<div class="bv_pl_additional_info">
+						<div class="fl_pl_additional_info">
 						<?php // Loop through rows.
 						while( have_rows('additional_information') ) : the_row();
 
@@ -54,9 +54,9 @@ $description = get_field('description');
 							$section_title = get_sub_field('section_title');
 							$section_text = get_sub_field('section_text'); ?>
 
-						<div class="bv_pl_ai_box">
-								<h3 class="bv_pl_title"><?php echo $section_title; ?></h3>
-								<div class="bv_pl_text"><?php echo $section_text; ?></div>
+						<div class="fl_pl_ai_box">
+								<h3 class="fl_pl_title"><?php echo $section_title; ?></h3>
+								<div class="fl_pl_text"><?php echo $section_text; ?></div>
 						</div>
 
 						<?php // End loop.
@@ -64,13 +64,13 @@ $description = get_field('description');
 						</div>
 					<?php endif; ?>
 				</div>
-				<div class="bv_product_right">
+				<div class="fl_product_right">
 					<?php the_post_thumbnail(); ?>
 				</div>
 			</div>
-			<div class="bv_recommended">
+			<div class="fl_recommended">
 				<h2 class="title-1"><?php the_field('recommended_title'); ?></h2>
-				<div class="bv_recommended_inner">
+				<div class="fl_recommended_inner">
 					<?php
 						$wines = get_field('wines');
 						if( $wines ): ?>
@@ -78,7 +78,7 @@ $description = get_field('description');
 
 								// Setup this post for WP functions (variable must be named $post).
 								setup_postdata($post); ?>
-								<div class="bv_wine">
+								<div class="fl_wine">
 									<a href="<?php the_permalink(); ?>">
 										<?php the_post_thumbnail(); ?>
 									</a>
@@ -122,7 +122,7 @@ jQuery(document).ready(function ($) {
 		$( "select#wine_dd option:not(#blank):selected" ).each(function() {
 		str += $( this ).val() + " ";
 		});
-		$( ".bv_order_btn" ).attr( "href", str );
+		$( ".fl_order_btn" ).attr( "href", str );
 	})
 	.change();
 
