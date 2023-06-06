@@ -1,10 +1,10 @@
 {
     "key": "group_643bdb1baf7ec",
-    "title": "Product: After Recommended",
+    "title": "Setting: CTA",
     "fields": [
         {
             "key": "field_644bf6adac2ae",
-            "label": "CTA",
+            "label": "Global",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -16,38 +16,13 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "left",
+            "placement": "top",
             "endpoint": 0
         },
         {
             "key": "field_645a26822c496",
             "label": "Background Image",
             "name": "background_image",
-            "aria-label": "",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "id",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "preview_size": "medium"
-        },
-        {
-            "key": "field_643bdbdd49960",
-            "label": "Image",
-            "name": "cta_image",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -151,8 +126,8 @@
             "return_format": "array"
         },
         {
-            "key": "field_644bf6b9ac2af",
-            "label": "Reveiws",
+            "key": "field_647f22b979cc7",
+            "label": "Product",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -164,15 +139,15 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "left",
+            "placement": "top",
             "endpoint": 0
         },
         {
-            "key": "field_644bf6105566a",
-            "label": "Reviews Title",
-            "name": "reviews_title",
+            "key": "field_643bdbdd49960",
+            "label": "Image",
+            "name": "cta_image_product",
             "aria-label": "",
-            "type": "text",
+            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -181,16 +156,38 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "What Our Guests Had To Say",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "return_format": "id",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
         },
         {
-            "key": "field_644bf5fe55669",
-            "label": "Review Stars",
-            "name": "review_stars",
+            "key": "field_647f22e079cc9",
+            "label": "Homepage",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_647f22d879cc8",
+            "label": "Image",
+            "name": "cta_image_home",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -231,5 +228,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1683629729
+    "modified": 1686054027
 }

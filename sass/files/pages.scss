@@ -1,3 +1,10 @@
+.home_video {
+	position: relative;
+	.et_pb_code_inner > div {
+		margin-top: -56.25%!important;
+	}
+}
+
 /* Wine Club */
 
 .fl_bottles_wrap {
@@ -75,7 +82,6 @@
 			font-size: 18px;
 			color: #222020;
 			background-color: transparent;
-			border: none;
 			cursor: pointer;
 			-webkit-appearance: none;
 			-webkit-border-radius: 0;
@@ -83,7 +89,8 @@
 			background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6cmdiYSgyNTUsMjU1LDI1NSwwKTt9LmNscy0ye2ZpbGw6IzVCNTg1NTt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 95% 50%;
 			background-color: #ecebeb;
 			background-position: center right;
-			padding-right: 20px;
+			border-radius: 3px;
+			padding: 7px 20px 7px 5px;
 			@include tab-max {
 				font-size: 16px;
 			}

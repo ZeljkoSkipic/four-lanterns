@@ -7,10 +7,14 @@
 	} ?>
 	<div class="bw_product_cta_left">
 	<?php
-	$cta_image = get_field('cta_image', 'option');
+	$cta_image_product = get_field('cta_image_product', 'option');
+	$cta_image_home = get_field('cta_image_home', 'option');
 	$size = 'full'; // (thumbnail, medium, large, full or custom size)
-	if( $cta_image ) {
-		echo wp_get_attachment_image( $cta_image, $size );
+	if( $cta_image_home && is_front_page() ) {
+		echo wp_get_attachment_image( $cta_image_home, $size );
+	}
+	else if( $cta_image_product ) {
+		echo wp_get_attachment_image( $cta_image_product, $size );
 	}
 	?>
 	</div>

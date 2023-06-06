@@ -111,9 +111,15 @@ if( function_exists('acf_add_options_page') ) {
     ));
 
     acf_add_options_sub_page(array(
-        'page_title'    => 'Bottom Product Call To Action',
-        'menu_title'    => 'Call To Action',
+        'page_title'    => 'Reviews Title and Stars',
+        'menu_title'    => 'Reviews',
         'parent_slug'   => 'edit.php?post_type=product',
+    ));
+
+	acf_add_options_sub_page(array(
+        'page_title'    => 'Call To Action',
+        'menu_title'    => 'Call To Action',
+        'parent_slug'   => 'theme-general-settings',
     ));
 
 	acf_add_options_sub_page(array(

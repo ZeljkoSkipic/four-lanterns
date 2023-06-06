@@ -24,7 +24,7 @@ if( have_rows('blurb', 'option') ): ?>
 			<?php endwhile; ?>
 			<div class="fl_signup_wrap">
 				<select name="" class="fl_signup_ss" id="wine_dd">
-					<option id="blank">Select State</option>
+					<option value="" id="blank">Select State</option>
 					<?php while( have_rows('states_links') ) : the_row();
 					$state = get_sub_field('state');
 					$signup_link = get_sub_field('signup_link');
@@ -32,26 +32,34 @@ if( have_rows('blurb', 'option') ): ?>
 					<option value="<?php echo $signup_link; ?>"><?php echo $state; ?></option>
 				<?php endwhile; ?>
 				</select>
-				<a class="fl_signup_btn" disabled target="_blank">Sign Up</a>
+				<a class="fl_signup_btn disabled" href="" target="_blank">Sign Up</a>
 			</div>
-		</div>
-		<?php endif; ?>
 
+		<?php endif; ?>
+		</div>
 	<?php endwhile; ?>
 	</div>
 <?php endif; ?>
 
 <script>
 jQuery(document).ready(function ($) {
-	$( "select" )
-	.change(function () {
-		var str = "";
-		$( "select#wine_dd option:not(#blank):selected" ).each(function() {
-		str += $( this ).val() + " ";
-		});
-		$( ".fl_signup_btn" ).attr( "href", str );
-	})
-	.change();
+	const select = $('.fl_signup_ss');
+	const signButton = '.fl_signup_btn';
 
+	function getSingupUrl() {
+		const currentUrl = $(this).val();
+		const closestSignButton = $(this).parent().find(signButton);
+
+		if(currentUrl !== undefined && currentUrl !== "" ) {
+			closestSignButton.attr('href', currentUrl);
+			closestSignButton.removeClass('disabled');
+		}
+		else {
+			closestSignButton.attr('href', '');
+			closestSignButton.addClass('disabled');
+		}
+	}
+
+	select.on('change', getSingupUrl);
 });
 </script>
