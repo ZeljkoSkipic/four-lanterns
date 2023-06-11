@@ -107,7 +107,10 @@ if( function_exists('acf_add_options_page') ) {
         'menu_title'    => 'Site Settings',
         'menu_slug'     => 'theme-general-settings',
         'capability'    => 'edit_posts',
-        'redirect'      => false
+        'redirect'      => false,
+		'position' => '2.69',
+		'icon_url' => get_stylesheet_directory_uri() . '/assets/icons/settings-icon.png'
+
     ));
 
     acf_add_options_sub_page(array(

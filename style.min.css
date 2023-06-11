@@ -25,9 +25,11 @@ https://flickity.metafizzy.co
 .flickity-page-dots .dot{display:inline-block;width:10px;height:10px;margin:0 8px;background:#333;border-radius:50%;opacity:.25;cursor:pointer}
 .flickity-page-dots .dot.is-selected{opacity:1}
 .title-1{font-size:4rem}
+#main-header .header_background{position:absolute;z-index:-1;width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
 #main-header .container{width:90%;max-width:1600px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 #main-header .fl_btn{z-index:9;color:#000;font-weight:600;background-color:#d6d2d0;padding:.3em 1em;border-radius:3px;border:2px solid #000;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;font-size:16px;display:-webkit-box;display:-ms-flexbox;display:flex;font-family:'Nunito Sans',Helvetica,Arial,Lucida,sans-serif;text-transform:uppercase;font-weight:700;-webkit-transition:.4s all;transition:.4s all}
 #main-header .fl_btn:hover{color:#fff;background-color:#000;border-color:#d6d2d0}
+.mobile_menu_bar:before{color:#fff !important}
 #et_mobile_nav_menu .mobile_nav.opened .mobile_menu_bar::before,.et_pb_module.et_pb_menu .et_mobile_nav_menu .mobile_nav.opened .mobile_menu_bar::before{content:'\4d'}
 ul.et_mobile_menu{border-top-color:#000}
 ul.et_mobile_menu li.menu-item-has-children .mobile-toggle,ul.et_mobile_menu li.page_item_has_children .mobile-toggle{width:44px;height:100%;padding:0 !important;max-height:44px;border:0;position:absolute;right:0;top:0;z-index:999;background-color:transparent}
@@ -98,20 +100,25 @@ ul.et_mobile_menu li.menu-item-has-children.dt-open>.mobile-toggle::after,.et-db
 .fl_product_main .fl_product_left{width:50%}
 .fl_product_main .fl_product_right{width:50%}
 }@media(min-width:797.6px) and (max-width:1199.5px){html{font-size:7px}
+#top-menu li a{font-size:15px !important}
+#et-top-navigation{padding-left:calc(50% - 70px) !important}
 .fl_bottles_wrap .fl_signup_wrap{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-transform:translateY(-40%);transform:translateY(-40%)}
 .fl_bottles_wrap .fl_signup_wrap .fl_signup_ss{margin-bottom:5px}
-}@media(min-width:797.6px){#main-header #et-top-navigation{padding-left:320px !important;float:none}
+}@media(min-width:797.6px){#main-header #logo{max-width:200px}
+#main-header #et-top-navigation{float:none}
 #main-header .fl_btn{margin-left:auto}
 .fl_wine{width:23%}
 .fl_wine:not(:last-child){margin-right:calc(8% / 3)}
 .bw_product_cta .bw_product_cta_left{width:50%}
 .bw_product_cta .bw_product_cta_right{width:calc(50% + 1px)}
 }@media(min-width:1199.6px) and (max-width:1360.5px){html{font-size:8px}
-}@media(min-width:1199.6px){.fl_bottles_wrap .fl_signup_wrap .fl_signup_btn{margin-left:10px}
+}@media(min-width:1199.6px){#main-header #et-top-navigation{padding-left:320px !important}
+.fl_bottles_wrap .fl_signup_wrap .fl_signup_btn{margin-left:10px}
 }@media(min-width:1360.6px) and (max-width:1659.5px){html{font-size:9px}
 }@media(max-width:1199.5px){.bw_product_cta .bw_product_cta_right{padding:5rem 10rem}
 .bw_product_cta .bw_product_cta_right .title-1{margin-top:5rem;margin-bottom:3rem}
-}@media(max-width:797.5px){#main-header .container{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+}@media(max-width:797.5px){body .mobile_nav .et_mobile_menu{top:83px;right:-5px;left:unset;padding:15px;border-top-color:#2d2a26;width:400px;max-width:90vw}
+#main-header .container{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 #main-header .clearfix:after{display:none}
 #main-header .logo_container{width:auto;position:relative;width:80px;text-align:right;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex}
 #main-header .logo_container img{max-width:100%}
@@ -123,6 +130,8 @@ ul.et_mobile_menu li.menu-item-has-children.dt-open>.mobile-toggle::after,.et-db
 .bw_product_cta{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 }@media(max-width:599.5px){html{font-size:5px}
 .title-1{font-size:30px}
+div.dipi_carousel_0 .swiper-button-next{right:-40px !important}
+div.dipi_carousel_0 .swiper-button-prev{left:-40px !important}
 .fl_bottles_wrap{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .fl_bottles_wrap .fl_signup_wrap .fl_signup_btn{margin-left:5px}
 .fl_product_main{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}

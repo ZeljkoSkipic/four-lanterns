@@ -237,7 +237,13 @@
 
 	<?php ob_start(); ?>
 		<header id="main-header" data-height-onload="<?php echo esc_attr( et_get_option( 'menu_height', '66' ) ); ?>">
-			<div class="container clearfix et_menu_container">
+			<?php
+			$header_background = get_field('header_background', 'option');
+			$size = 'full';
+			if( $header_background ) {
+				echo wp_get_attachment_image( $header_background, $size, "", array( "class" => "header_background" ) );
+			} ?>
+		<div class="container clearfix et_menu_container">
 			<?php
 				$logo = ( $user_logo = et_get_option( 'divi_logo' ) ) && ! empty( $user_logo )
 					? $user_logo

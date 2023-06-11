@@ -5,6 +5,15 @@
 	}
 }
 
+@include mob-only {
+	div.dipi_carousel_0 .swiper-button-next {
+		right: -40px!important
+	}
+	div.dipi_carousel_0 .swiper-button-prev {
+		left: -40px!important;
+	}
+}
+
 /* Wine Club */
 
 .fl_bottles_wrap {
