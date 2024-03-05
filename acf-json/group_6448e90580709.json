@@ -29,8 +29,24 @@
         },
         {
             "key": "field_6448e906ddf4e",
-            "label": "Header Button Link and Text",
+            "label": "Button 1",
             "name": "header_button",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_652fbccd36e92",
+            "label": "Button 2",
+            "name": "header_button_2",
             "aria-label": "",
             "type": "link",
             "instructions": "",
@@ -62,5 +78,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1686396570
+    "modified": 1697627349
 }

@@ -3,7 +3,11 @@
 add_action( 'wp_enqueue_scripts', 'elegant_enqueue_css' );
 
 function elegant_enqueue_css() {
+	$css_cache_buster = date("YmdHi", filemtime( get_stylesheet_directory() . '/child-theme.css'));
+
 	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'child-theme-style', get_stylesheet_directory_uri() . '/child-theme.css', array(), $css_cache_buster, 'all' );
+
 }
 
 

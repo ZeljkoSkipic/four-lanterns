@@ -333,15 +333,26 @@
 
 					?>
 				</div> <!-- #et-top-navigation -->
-				<?php
-				$header_button = get_field('header_button', 'option');
-				if( $header_button ):
-					$link_url = $header_button['url'];
-					$link_title = $header_button['title'];
-					$link_target = $header_button['target'] ? $header_button['target'] : '_self';
-					?>
-				<a class="fl_btn" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-				<?php endif; ?>
+				<div class="nav_btns">
+					<?php
+					$header_button = get_field('header_button', 'option');
+					if( $header_button ):
+						$link_url = $header_button['url'];
+						$link_title = $header_button['title'];
+						$link_target = $header_button['target'] ? $header_button['target'] : '_self';
+						?>
+					<a class="fl_btn nav_btn_1" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+					<?php endif; ?>
+					<?php
+					$header_button2 = get_field('header_button_2', 'option');
+					if( $header_button2 ):
+						$link_url2 = $header_button2['url'];
+						$link_title2 = $header_button2['title'];
+						$link_target2 = $header_button2['target'] ? $header_button2['target'] : '_self';
+						?>
+					<a class="fl_btn nav_btn_2" href="<?php echo esc_url( $link_url2 ); ?>" target="<?php echo esc_attr( $link_target2 ); ?>"><?php echo esc_html( $link_title2 ); ?></a>
+					<?php endif; ?>
+				</div>
 			</div> <!-- .container -->
 			<?php if ( $show_search_icon ) : ?>
 			<div class="et_search_outer">
