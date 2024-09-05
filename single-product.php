@@ -108,7 +108,7 @@ $description = get_field('description');
 			if( $review_stars ) {
 				echo wp_get_attachment_image( $review_stars, $size, "", array( "class" => "review_stars" ) );
 			} ?>
-			<script src="https://login.reviewgenerationservices.com/js/v1/embed.js?token=703d1dfa-2be9-4afa-b376-8647d9fae952" type="text/javascript"></script>
+			<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script> <div class="elfsight-app-57b7f74e-bf9b-4d1b-81e2-e9069c794248" data-elfsight-app-lazy></div>
 		</div>
 	</div>
 	<?php get_template_part('template-parts/cta'); ?>
